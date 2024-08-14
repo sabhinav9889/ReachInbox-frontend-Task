@@ -3,7 +3,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## ScreenShot
 
-![alt text]([[https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/sabhinav9889/ReachInbox-frontend-Task/blob/main/public/Screenshot%20(298).png)](https://github.com/sabhinav9889/ReachInbox-frontend-Task/blob/main/public/Screenshot%20(298).png?raw=true))
+![Screenshot (298)](https://github.com/user-attachments/assets/97dce6ba-18de-4a49-a6bd-7f71c37b93f6)
+
 
 ## Getting Started
 
