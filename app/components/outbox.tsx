@@ -10,7 +10,10 @@ import { messageData } from "../context";
 import axios from "axios";
 const Outbox = () =>{
     const router =  useRouter();
-    const url = window.location.href;
+    let url = "";
+    if (typeof window !== "undefined") {
+       url = window.location.href;
+    }
     const urlParams = new URL(url);
     const token = urlParams.searchParams.get('token');
     const {nav, dark, setDark} = useContext(messageData)!;
