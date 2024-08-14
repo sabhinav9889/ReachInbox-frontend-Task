@@ -62,7 +62,7 @@ const ViewMain = ()=>{
                     <FontAwesomeIcon icon={faAngleDown} className="ml-2"/>
                 </button>
                 <button className={`w-12 h-8 ${(dark)?'bg-upNav':'bg-slate-400'} ml-4  pb-4  rounded-md`}>
-                    ...
+                    {'...'}
                 </button>
             </div>
           </div>
@@ -81,9 +81,9 @@ const ViewMain = ()=>{
                         <span className="text-end ml-2">{new Date(data.sentAt).toTimeString().split(" ")[0]}</span>
                     </div>
                 </div>
-                <p>from : {data.fromEmail}</p>
-                <p>to : {data.toEmail}</p>
-                <p>Hi, </p>
+                <p>from {':'} {data.fromEmail}</p>
+                <p>to {':'} {data.toEmail}</p>
+                <p>Hi{','} </p>
                 <div dangerouslySetInnerHTML={{ __html: data.body }}/>
             </div>
           </div>}
