@@ -77,7 +77,7 @@ const ViewMain = ()=>{
                 <div className="flex w-full">
                     <p className="w-1/2">{data.subject}</p>
                     <div className="flex w-full justify-end text-cardLine">
-                        <span className="text-end">{new Date(data.sentAt).toISOString().split("T")[0]}</span>{" "}: 
+                        <span className="text-end">{new Date(data.sentAt).toISOString().split("T")[0]}</span>{" : "} 
                         <span className="text-end ml-2">{new Date(data.sentAt).toTimeString().split(" ")[0]}</span>
                     </div>
                 </div>
