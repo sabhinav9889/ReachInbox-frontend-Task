@@ -10,7 +10,7 @@ import { messageData } from "../context";
 import axios from "axios";
 const Outbox = () =>{
     const router =  useRouter();
-    let url = "";
+    let url = "http://localhost:3000/";
     if (typeof window !== "undefined") {
        url = window.location.href;
     }
