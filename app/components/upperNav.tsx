@@ -15,7 +15,7 @@ const UpperNav = ()=>{
                {(dark)&&<FontAwesomeIcon icon={faSun} className="ml-4 mt-0.5 text-lg text-orange-300"/>}
             </div>
             <button className="absolute right-4 text-xs">
-                Tim's Workspace
+                Tim s Workspace
                 <FontAwesomeIcon icon={faAngleDown} className="ml-2"/>
             </button>
         </nav>
