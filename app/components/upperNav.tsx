@@ -6,7 +6,7 @@ const UpperNav = ()=>{
     const contextValue = useContext(messageData);
     const {dark, setDark} = contextValue!;
     return(
-        <nav className={`h-16 w-full flex p-4 ${dark?'bg-upNav':'bg-slate-400'}`}>
+        <nav className={`h-16 w-full flex p-4 ${dark?'bg-upNav':'bg-slate-200'}`}>
             <span className={`font-semibold ml-2 mt-1`}>Onebox</span>
             <div className={` absolute  md:right-48 right-36 w-16 h-7 rounded-full border flex border-cardLine ${(dark)?'bg-upNav':'bg-white'} cursor-pointer`} onClick={()=>setDark((prev)=>(prev)?false:true)}>
                {(!dark)&&<FontAwesomeIcon icon={faMoon} className="mt-0.5 ml-2 text-black text-lg"/>}

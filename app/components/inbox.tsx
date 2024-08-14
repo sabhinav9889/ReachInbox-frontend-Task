@@ -35,7 +35,7 @@ const Inbox = () => {
           <FontAwesomeIcon icon={faAngleDown} className="pt-1 pl-2" />
         </p>
         <div className="flex justify-end float-right w-1/2 mr-2">
-          <span className={`w-8 h-8 p-2 cursor-pointer ${(dark)?'bg-upNav':'bg-slate-400'} rounded-md text-xs`}>
+          <span className={`w-8 h-8 p-2 cursor-pointer ${(dark)?'bg-upNav':'bg-slate-200'} rounded-md text-xs`}>
             <FontAwesomeIcon icon={faRefresh} />
           </span>
         </div>
@@ -47,12 +47,12 @@ const Inbox = () => {
         <input
           type="text"
           placeholder="Search"
-          className={`w-full h-8 mt-4 p-4 rounded-md ${(dark)?'bg-upNav':'bg-slate-400 placeholder-black'}`}
+          className={`w-full h-8 mt-4 p-4 rounded-md ${(dark)?'bg-upNav':'bg-slate-200 placeholder-black'}`}
         />
       </div>
       <div className="flex">
         <div className="w-1/2 flex p-2 ml-4">
-          <div className={`w-8 h-8 ${(dark)?'bg-upNav text-blue-500':'bg-slate-400 text-black'} rounded-lg p-1 pl-2 text-sm`}>
+          <div className={`w-8 h-8 ${(dark)?'bg-upNav text-blue-500':'bg-slate-200 text-black'} rounded-lg p-1 pl-2 text-sm`}>
             26
           </div>{" "}
           <p className="p-1 ml-2">New Replies</p>
@@ -75,11 +75,11 @@ const Inbox = () => {
         </div>
         <p className="pl-4 pr-4 h-6 overflow-hidden text-cardLine">{ele.subject}</p>
         <div className="flex h-10">
-          <div className={`flex justify-center pt-1.5 mt-2 border rounded-3xl h-7 w-1/2 ${(dark)?'bg-upNav':'bg-slate-400'}`}>
+          <div className={`flex justify-center pt-1.5 mt-2 border rounded-3xl h-7 w-1/2 ${(dark)?'bg-upNav':'bg-slate-200'}`}>
             <div className="w-3 h-3 bg-orange-300 text-orange-300 rounded-full"></div>
             <p className="ml-2 text-xs">Interested</p>
           </div>
-          <div className={`flex justify-center pt-1.5 mt-2 border rounded-3xl h-7 w-1/2 ${(dark)?'bg-upNav':'bg-slate-400'} text-xs ml-2`}>
+          <div className={`flex justify-center pt-1.5 mt-2 border rounded-3xl h-7 w-1/2 ${(dark)?'bg-upNav':'bg-slate-200'} text-xs ml-2`}>
             <FontAwesomeIcon icon={faPaperPlane} />{" "}
             <p className="ml-1">Campaign Name</p>
           </div>

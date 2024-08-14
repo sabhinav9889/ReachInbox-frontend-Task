@@ -9,7 +9,7 @@ const LeftNav = ()=>{
     const contextValue  = useContext(messageData);
     const {nav, setNav, dark, setDark}  = contextValue!;
     return(
-        <div className={`min-h-screen w-16 ${(dark)?'bg-navColor':'bg-slate-500'}`}>
+        <div className={`min-h-screen w-16 ${(dark)?'bg-navColor':'bg-slate-300'}`}>
             <div className="pl-3 pr-3 pt-4">
                 <Image src="/images.jpeg" width={32} height={32} alt="logo" className=""></Image>
             </div>

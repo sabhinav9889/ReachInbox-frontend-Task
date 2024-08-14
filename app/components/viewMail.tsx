@@ -47,6 +47,8 @@ const ViewMain = ()=>{
         };
     }, [event]);
     return(
+      <div>
+        {(loading)?<><div className="w-full flex justify-center mt-80"><p>Something is comming up! Stay tuned</p></div></>:
         <div className="">
           <div className="xl:flex">
             <div className="p-4">
@@ -54,15 +56,15 @@ const ViewMain = ()=>{
                 <p className="text-cardText">{relation1[2]}</p>
             </div>
             <div className="w-full flex xl:justify-end mr-2 p-4">
-                <button className={`w-32 h-8 ${(dark)?'bg-upNav':'bg-slate-400'} rounded-md`}>
+                <button className={`w-32 h-8 ${(dark)?'bg-upNav':'bg-slate-200'} rounded-md`}>
                     Interested
                     <FontAwesomeIcon icon={faAngleDown} className="ml-2"/>
                 </button>
-                <button className={`w-32 h-8 ${(dark)?'bg-upNav':'bg-slate-400'} ml-4  rounded-md`}>
+                <button className={`w-32 h-8 ${(dark)?'bg-upNav':'bg-slate-200'} ml-4  rounded-md`}>
                     Move
                     <FontAwesomeIcon icon={faAngleDown} className="ml-2"/>
                 </button>
-                <button className={`w-12 h-8 ${(dark)?'bg-upNav':'bg-slate-400'} ml-4  pb-4  rounded-md`}>
+                <button className={`w-12 h-8 ${(dark)?'bg-upNav':'bg-slate-200'} ml-4  pb-4  rounded-md`}>
                 </button>
             </div>
           </div>
@@ -70,10 +72,10 @@ const ViewMain = ()=>{
           {(!loading)&&data!=undefined&&<div className={` ml-8 mr-8 ${(loading)?'hidden':''}`}>
             <div className="flex mt-2">
                 <hr className="h-0 border-b-2 w-full mt-3 border-upNav"/>
-                <span className={`w-20 p-1 pl-2 text-xs ${(dark)?'bg-upNav':'bg-slate-400'} rounded-md`}>Today</span>
+                <span className={`w-20 p-1 pl-2 text-xs ${(dark)?'bg-upNav':'bg-slate-200'} rounded-md`}>Today</span>
                 <hr className="h-0 border-b-2 w-full mt-3 border-upNav"/>
             </div>
-            <div className={`${(dark)?'bg-upNav':'bg-slate-400'} p-4 rounded-md`}>
+            <div className={`${(dark)?'bg-upNav':'bg-slate-200'} p-4 rounded-md`}>
                 <div className="flex w-full">
                     <p className="w-1/2">{data.subject}</p>
                     <div className="flex w-full justify-end text-cardLine">
@@ -88,7 +90,8 @@ const ViewMain = ()=>{
             </div>
           </div>}
           <button className="absolute bottom-6 md:w-52 w-36 ml-4 border-blue-700 h-12 rounded-md bg-gradient-to-r from-blue-600 via-blue-700 to-blue-900 text-white text-xs md:text-sm">Reply</button>
-        </div>
+        </div>}
+      </div>
     )
 }
 
