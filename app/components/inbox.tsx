@@ -75,11 +75,11 @@ const Inbox = () => {
         </div>
         <p className="pl-4 pr-4 h-6 overflow-hidden text-cardLine">{ele.subject}</p>
         <div className="flex h-10">
-          <div className="flex justify-center pt-1.5 mt-2 border rounded-3xl h-7 w-1/2 bg-upNav">
+          <div className={`flex justify-center pt-1.5 mt-2 border rounded-3xl h-7 w-1/2 ${(dark)?'bg-upNav':'bg-slate-400'}`}>
             <div className="w-3 h-3 bg-orange-300 text-orange-300 rounded-full"></div>
             <p className="ml-2 text-xs">Interested</p>
           </div>
-          <div className="flex justify-center pt-1.5 mt-2 border rounded-3xl h-7 w-1/2 bg-upNav text-xs ml-2">
+          <div className={`flex justify-center pt-1.5 mt-2 border rounded-3xl h-7 w-1/2 ${(dark)?'bg-upNav':'bg-slate-400'} text-xs ml-2`}>
             <FontAwesomeIcon icon={faPaperPlane} />{" "}
             <p className="ml-1">Campaign Name</p>
           </div>

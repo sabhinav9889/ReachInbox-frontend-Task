@@ -63,7 +63,6 @@ const ViewMain = ()=>{
                     <FontAwesomeIcon icon={faAngleDown} className="ml-2"/>
                 </button>
                 <button className={`w-12 h-8 ${(dark)?'bg-upNav':'bg-slate-400'} ml-4  pb-4  rounded-md`}>
-                  {dot}
                 </button>
             </div>
           </div>
@@ -78,13 +77,13 @@ const ViewMain = ()=>{
                 <div className="flex w-full">
                     <p className="w-1/2">{data.subject}</p>
                     <div className="flex w-full justify-end text-cardLine">
-                        <span className="text-end">{new Date(data.sentAt).toISOString().split("T")[0]}</span>
+                        <span className="text-end">{new Date(data.sentAt).toISOString().split("T")[0]}</span>{" : "} 
                         <span className="text-end ml-2">{new Date(data.sentAt).toTimeString().split(" ")[0]}</span>
                     </div>
                 </div>
-                <p>from  {data.fromEmail}</p>
-                <p>to  {data.toEmail}</p>
-                <p>Hi </p>
+                <p>from {':'} {data.fromEmail}</p>
+                <p>to {':'} {data.toEmail}</p>
+                <p>Hi{','} </p>
                 <div dangerouslySetInnerHTML={{ __html: data.body }}/>
             </div>
           </div>}
