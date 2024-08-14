@@ -3,8 +3,6 @@ import { threadId } from "worker_threads";
 
 const GetList = async()=>{
         const token = localStorage.getItem("token");
-        // const url = "https://hiring.reachinbox.xyz/api/v1/onebox/reset";
-        // await axios.get(url);
         return await axios.get(
             "https://hiring.reachinbox.xyz/api/v1/onebox/list",
             {
