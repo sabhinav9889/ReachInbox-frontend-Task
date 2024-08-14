@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## ScreenShot
 
-![ScreenShot](public/Screenshot (298).png)
+![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/sabhinav9889/ReachInbox-frontend-Task/blob/main/public/Screenshot%20(298).png))
 ## Getting Started
 
 First, run the development server:
